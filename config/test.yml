@@ -1,0 +1,26 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: config
+  cloud:
+#    client:
+#      ip-address:  127.0.0.1
+    config:
+      server:
+        git:
+          uri: https://github.com/lynnlovemin/SpringCloudActivity.git
+          #配置存放到这个目录下
+          searchPaths: config
+          username: ******
+          password: ******
+      #使用master分支的配置
+      label: master
+eureka:
+#  instance:
+#    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://admin:admin123@node1:8100/eureka/

@@ -18,4 +18,4 @@ management:
       exposure:
         include: refresh,health,info
 data:
-  message: test1
+  message: test2

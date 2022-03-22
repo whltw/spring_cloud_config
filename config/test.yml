@@ -1,5 +1,3 @@
-data:
-  message: testdata
 spring:
   application:
     name: test
@@ -14,3 +12,10 @@ eureka:
     service-url:
       defaultZone: http://admin:admin123@node1:8100/eureka/
       #,http://node2:8101/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
+data:
+  message: test1

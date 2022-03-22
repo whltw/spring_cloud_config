@@ -1,3 +1,5 @@
+data:
+  message:testdata
 spring:
   application:
     name: test
